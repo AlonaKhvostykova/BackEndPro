@@ -1,4 +1,4 @@
-package task_01;
+package lesson01_2006.task_01;
 
 public class MyThread2 implements Runnable {
     @Override

@@ -1,4 +1,4 @@
-package task_04;
+package lesson01_2006.task_04;
 
 public class MyThread extends Thread{
     @Override

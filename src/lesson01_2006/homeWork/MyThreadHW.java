@@ -1,4 +1,4 @@
-package homeWork;
+package lesson01_2006.homeWork;
 
 public class MyThreadHW extends Thread {
     @Override

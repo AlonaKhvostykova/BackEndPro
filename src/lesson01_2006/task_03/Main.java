@@ -1,17 +1,13 @@
-package task_04;
+package lesson01_2006.task_03;
 //есть целочисл-й счетчик.
 //Есть 3 потока. Каждый поток в цикле должен увеличить миллион раз значение счетчика на единицу
 //и вывести значение счетчика в консоль, т.е. счетчик д.б. = 3_000_000
 
 public class Main {
 
-    private static  int counter;
+    public static  int counter;
 
-    public static void increment(){
-        counter++;
-    }
-
-    public static synchronized void main(String[] args) {
+    public static void main(String[] args) {
 
         MyThread myThread1 = new MyThread();
         MyThread myThread2 = new MyThread();
@@ -20,7 +16,7 @@ public class Main {
         myThread2.start();
 
         for (int i = 0; i < 1_000_000; i++) {
-            increment();
+            counter++;
         }
 
         try {
